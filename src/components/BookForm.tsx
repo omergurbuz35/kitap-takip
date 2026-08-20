@@ -12,7 +12,7 @@ export const BookForm: React.FC<Props> = ({ onAddBook }) => {
   const [genre, setGenre] = useState<BookGenre>('Yazılım & Bilim');
   const [totalPages, setTotalPages] = useState<number | ''>('');
   const [currentPage, setCurrentPage] = useState<number | ''>('');
-  const [rating, setRating] = useState<number>(5);
+  const [rating] = useState<number>(5);
   const [note, setNote] = useState('');
   const [status, setStatus] = useState<Book['status']>('Okunacak');
 
